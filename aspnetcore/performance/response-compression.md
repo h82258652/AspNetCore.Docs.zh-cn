@@ -144,9 +144,9 @@ public void ConfigureServices(IServiceCollection services)
 
 | Compression Level | 说明 |
 | ----------------- | ----------- |
-| [CompressionLevel](xref:System.IO.Compression.CompressionLevel) | 压缩应该尽快完成，即使生成的输出未以最佳方式压缩。 |
-| [CompressionLevel. NoCompression](xref:System.IO.Compression.CompressionLevel) | 不应执行压缩。 |
-| [CompressionLevel](xref:System.IO.Compression.CompressionLevel) | 即使压缩需要更长的时间，也应以最佳方式压缩响应。 |
+| [CompressionLevel.Fastest](xref:System.IO.Compression.CompressionLevel) | 压缩应该尽快完成，即使生成的输出未以最佳方式压缩。 |
+| [CompressionLevel.NoCompression](xref:System.IO.Compression.CompressionLevel) | 不应执行压缩。 |
+| [CompressionLevel.Optimal](xref:System.IO.Compression.CompressionLevel) | 即使压缩需要更长的时间，也应以最佳方式压缩响应。 |
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
